@@ -7,6 +7,7 @@ Curso de Area51
 - Editor de codigo - [`Visual Studio Code`](https://code.visualstudio.com/).
 - cmder: (opcional) - [`cmder`](https://cmder.net/).
 - Administrador de paquetes : (opcional) - [`Chocolatey`](https://chocolatey.org/)
+- Instalacion de una extension de chrome para depurar codigo en angular:  (opcional) - [`augury`](https://chrome.google.com/webstore/detail/augury/elgalmkoelokbchhkhacckoklkejnhcd)
 - Instalacion de TypeScript (Opcional) - [`typescriptlang`](https://www.typescriptlang.org/)
 
 
