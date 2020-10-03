@@ -7,8 +7,8 @@ import { Customer, Dish } from '../interfaces';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
-  name:string ='Jonathan';
-
+  nombre:string ='Jonathan';
+  ResultHijo: Dish;
   
 
   dishes:Array<Dish>=[
@@ -50,5 +50,8 @@ export class MenuComponent implements OnInit {
     });
   }
 
-  
+  select(event){
+    
+    this.ResultHijo = event.name;
+  }
 }
