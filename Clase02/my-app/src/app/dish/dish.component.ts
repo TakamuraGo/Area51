@@ -10,14 +10,22 @@ export class DishComponent implements OnInit {
 
 
   //Usando Getter y Setter.
-  private _name ='';
+  
+  private _name:string;
+  private _totalIngredients:number;
 
-  get name():string{
+  @Input() set dish(value: Dish){
+    console.log(value);
+    this._name = this.generateName(value.name);
+    this._totalIngredients = value.ingredients.length;
+    
+  }
+  get name(): string{
     return this._name;
   }
-  @Input() set name(value:string){
-    this._name = this.generateName(value);
-    console.log(this.name);
+
+  get totalIngredients(): number{
+    return this._totalIngredients;
   }
 
   constructor() { }

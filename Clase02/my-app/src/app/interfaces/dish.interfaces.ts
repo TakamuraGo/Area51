@@ -13,7 +13,7 @@
 //     //metodo de tipo interface?????
 //     notify(): Notify;
 // }
-export interface Dish extends Ingredients{
+export interface Dish{
     name: string;
     ingredients: Ingredients[];
 }

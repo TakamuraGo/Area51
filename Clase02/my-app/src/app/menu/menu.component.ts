@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Customer } from '../interfaces';
+import { Customer, Dish } from '../interfaces';
 
 @Component({
   selector: 'rw-menu',
@@ -11,16 +11,32 @@ export class MenuComponent implements OnInit {
 
   
 
-  dishes:Array<string>=[
-    'Arroz con Pollo',
-    'Escabeche de Pollo',
-    'Chanfainita Combinada',
-    'Ceviche',
-    'Cau-cau',
-    'Pollo a la brasa',
-    'Tacu Tacu',
-    'Tallarin rojo con su rica huancaina'
+  dishes:Array<Dish>=[
+    {
+      name: 'Arroz con pollo',
+      ingredients : [{name :'pollo',qty:1},{name :'Arroz',qty:5}]
+    },
+    {
+      name: 'Escabeche de pollo',
+      ingredients : [{name :'pollo',qty:1},{name :'Arroz',qty:5},{name :'pollo',qty:1},{name :'Arroz',qty:5}]
+    },
+    {
+      name: 'Ceviche',
+      ingredients : [{name :'Ceviche',qty:1},{name :'Cebolla',qty:5}]
+    }
+    
   ];
+
+
+  // 'Arroz con Pollo',
+  //   'Escabeche de Pollo',
+  //   'Chanfainita Combinada',
+  //   'Ceviche',
+  //   'Cau-cau',
+  //   'Pollo a la brasa',
+  //   'Tacu Tacu',
+  //   'Tallarin rojo con su rica huancaina'
+
   constructor() {
     this.listDishes();
    }
