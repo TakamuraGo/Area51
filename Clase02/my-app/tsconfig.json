@@ -16,6 +16,9 @@
       "es2018",
       "dom"
     ],
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "paths": {
+      "@rw/models" : ["src/app/interfaces"]
+    }
   }
 }
