@@ -19,4 +19,6 @@ Curso de Area51
 * Creacion de paginas web estaticas con angular [`scully`](https://scully.io/)
 * Herramienta para VCode para ver el resultado en el editor mientras programas: [`quokkajs`](https://quokkajs.com/)
 * Herramienta para realizar MarkDown [`iawriter`](https://ia.net/es/writer) o [`dillinger`](https://dillinger.io/) 
+* Buenas practicas con CSS : convención de nomenclatura de  [`BEM`](http://getbem.com/)
+* Tracking de todos los errores [`trackjs`](https://trackjs.com/)
 * Web para [`freelancer`](https://www.freelancer.es).

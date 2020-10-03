@@ -2,5 +2,7 @@
 Hola {{name}}
 
 <ul>
-    <li *ngFor="let dish of dishes" class="dishes" >{{dish}}</li>
+    <li *ngFor="let dish of dishes" class="dishes" >
+        <rw-dish [name]= "dish" ></rw-dish>
+    </li>
 </ul>

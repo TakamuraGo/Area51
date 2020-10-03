@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Customer } from '../interfaces';
 
 @Component({
   selector: 'rw-menu',
@@ -7,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
   name:string ='Jonathan';
+
+  
 
   dishes:Array<string>=[
     'Arroz con Pollo',
@@ -18,9 +21,18 @@ export class MenuComponent implements OnInit {
     'Tacu Tacu',
     'Tallarin rojo con su rica huancaina'
   ];
-  constructor() { }
+  constructor() {
+    this.listDishes();
+   }
 
   ngOnInit(): void {
   }
 
+  listDishes() : void{
+    this.dishes.forEach((dish, i) =>{
+      console.log(i+1 + ' - '+ dish);
+    });
+  }
+
+  
 }
