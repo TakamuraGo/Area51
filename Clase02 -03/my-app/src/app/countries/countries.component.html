@@ -1,0 +1,15 @@
+
+<!-- {{total | filesize : 'hola': 12: true:'fuck':selected}} -->
+{{total  | empty}}
+
+<hr>
+<button (click)="send(selected.currencies[0].name)">Enviar</button>
+<hr>
+<p>countries works!</p>
+{{selected.currencies[0].name | uppercase}}
+<br><br>
+{{birtday | date | lowercase}}
+<br><br>
+{{total | currency : selected.currencies[0].symbol}}
+<br><br>
+<pre>{{selected | json }}</pre>
